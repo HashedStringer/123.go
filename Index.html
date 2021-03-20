@@ -5,12 +5,12 @@
   var decodedCookie = decodeURIComponent(document.cookie);
   var ca = decodedCookie.split(';');
   for(var i = 0; i <ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
+    var lol = lola[i];
+    while (lol.charAt(0) == ' ') {
+      lol = lol.substring(1);
     }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
+    if (lol.indexOf(name) == 0) {
+      return lol.substring(name.length, lol.length);
     }
   }
   return "";
